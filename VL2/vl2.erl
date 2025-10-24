@@ -37,7 +37,6 @@ removelasttail([_H], Acc) -> invertList(Acc);
 removelasttail([H|T], Acc) -> removelasttail(T, [H|Acc]).
 
 % zip(<List>, <List>)
-
 zip(L1, L2) -> lists:reverse(zip(L1, L2, [])).
 
 zip([], _, Acc) -> Acc;
