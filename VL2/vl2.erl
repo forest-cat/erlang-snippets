@@ -5,8 +5,8 @@
 -import(vltest, [fact/1]).
 
 square(X) -> XQ = X * X,
-	     XB = fact(X),
-	 io:format("~p! = ~p\n", [X,XB]),
+	     %XB = fact(X),
+	 %io:format("~p! = ~p\n", [X,XB]),
 	 io:format("~p^2 = ~p\n", [X,XQ]).
 
 
@@ -33,7 +33,7 @@ invertList([], InvertedList) -> InvertedList.
 
 % Removes the last element from a list removelasttail(<List>)
 removelasttail(List) -> removelasttail(List, []).
-removelasttail([_H], Acc) -> invertList(Acc);
+removelasttail([_], Acc) -> invertList(Acc);
 removelasttail([H|T], Acc) -> removelasttail(T, [H|Acc]).
 
 % zip(<List>, <List>)
