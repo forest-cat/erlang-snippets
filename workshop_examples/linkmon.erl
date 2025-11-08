@@ -18,6 +18,7 @@ chain(N) ->
         _ -> ok
     end.
 
+
 start_critic() ->
     spawn(?MODULE, critic, []).
 
