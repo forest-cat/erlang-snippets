@@ -6,7 +6,3 @@ fact(N) when N>0 ->  % beginning of function declaration
 fact(0) ->           %  |
     1.               % end of function declaration
 
-factt(N) -> factt(N, 1).
-
-factt(N, Acc) when N>0 ->  factt(N-1, N * Acc);
-factt(0, Acc) -> Acc.
